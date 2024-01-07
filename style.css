@@ -60,7 +60,7 @@ body {
     margin-top: 20px;
     position: relative;
     overflow: auto;
-    height:800px
+    height: auto
 }
 
 #comprar {
@@ -82,9 +82,9 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--vermelho);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
     height: 40px;
-    overflow-x:auto
+    overflow-x: auto;
 }
 
 #opcoes button {
@@ -145,13 +145,14 @@ body {
 #mais {
     background-color: var(--verde);
     left: 79%;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
 }
 
 #menos {
     background-color: var(--vermelho);
     left: 21%;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
+    color: white;
 }
 
 #adicionar {
@@ -181,7 +182,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     top: 10px;
-    max-width:98%;
+    max-width: 98%;
     box-shadow: black 0px 0px 3px;
 }
 
@@ -194,18 +195,74 @@ body {
     bottom: 70px;
 }
 
-@media only screen and (max-width: 768px) {
-    #top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+#search-div {
+    position:fixed;
+    top:-10%;
+    width:100%;
+    display:flex;
+    justify-content: center; 
+    transition:200ms ease-in-out 
+}
 
+#search-div * {
+    border:none
+}
+
+
+#search-div input {
+    height:30px;
+    padding-left:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+#search-div button {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    padding-left:10px;
+    padding-right:10px
+}
+
+
+#search-div input::placeholder {
+    color:black
+}
+
+@media only screen and (max-width: 760px) {
     #top h1 {
         margin: 10px 0;
     }
 
+    #top img {
+        width: 100px;
+    }
 
     #adicionar {
-        width:100px
+        width: 80%;
+        font-size: 12px;
     }
+
+    #opcoes button {
+        font-size: 10px;
+        margin: 0 3px;
+    }
+
+    .tituloItem {
+        font-size: 10px;
+    }
+
+    #produtoDescricao h1 {
+        font-size: 5px;
+    }
+
+    #produtoAtivo img {
+        width: 80%;
+    }
+
+    #comprar {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    
 }
