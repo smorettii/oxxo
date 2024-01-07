@@ -256,8 +256,26 @@ body {
 
 #carrinho-comprar {
     filter: invert(1);
-    height:80%;
-    transition:200ms ease-in-out 
+    width:30px;
+    transition:200ms ease-in-out;
+}
+
+#div-carrinho-test {
+    position:relative
+}
+
+#numero-carrinho {
+    background-color:rgb(39, 214, 0);
+    width:15px;
+    height:15px;
+    position:absolute;
+    text-align: center;
+    box-shadow: rgb(50, 212, 0) 0px 0px 3px;
+    border-radius: 10px;
+    color:black;
+    right:-10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #carrinho-comprar:hover {
@@ -282,7 +300,6 @@ body {
     height:50px;
     width:150px;
     bottom:50px;
-    position:absolute;
     border:none;
     background-color:var(--verde);
     color:white;
@@ -290,13 +307,32 @@ body {
     font-size: 18px;
     border-radius: 10px;
     box-shadow: black 0px 1px 4px;
-    left:50%;
-    transform:translate(-50%);
     transition:200ms ease-in-out
 }
 
-#comprar_alternativo:hover {
-    transform:translate(-50%) scale(1.05)
+#voltar {
+    height:50px;
+    width:150px;
+    bottom:50px;
+    border:none;
+    background-color:var(--vermelho);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: black 0px 1px 4px;
+    transition:200ms ease-in-out
+}
+
+#comprar_alternativo:hover, #voltar:hover {
+    transform:scale(1.05)
+}
+
+#div_continuar_seila {
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translate(-50%)
 }
 
 #carrinho-lista {
@@ -364,5 +400,26 @@ body {
 
     #carrinho-div {
         width:80%;
+    }
+
+    #carrinho-comprar {
+        filter: invert(1);
+        width:20px;
+        transition:200ms ease-in-out;
+    }
+
+    
+    #numero-carrinho {
+        background-color:rgb(39, 214, 0);
+        width:13px;
+        height:13px;
+        position:absolute;
+        text-align: center;
+        box-shadow: rgb(50, 212, 0) 0px 0px 3px;
+        border-radius: 10px;
+        color:black;
+        right:-10px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
