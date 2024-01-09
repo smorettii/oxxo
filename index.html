@@ -17,9 +17,9 @@
         <img src="background.jpg">
 
         <div id="centralizar">
-            <h1 id="carregando_produtos">Carregando produtos</h1>
+            <h1 id="carregando_produtos">Carregando produtos & Categorias</h1>
             <div id="carregando-rodar"></div>
-            
+
         </div>
     </div>
 
@@ -60,7 +60,45 @@
         </div>
     </div>
 
+    <div id="resultado-produtos" style="display:none">
+        <div id="resultado-produtos2">
+            <div id="produtosresultados">
+                <div id="produto-resultado" style="margin:10px;background-color:rgb(255, 255, 255);padding:4px;border:none;border-radius: 4px;box-shadow: black 0px 0px 3px;width:200px;height:180px;position:relative">
+                    <div style="display:flex">
+                        <img id="imagem-da-bomba" src="./produtos/Bg Guaraviton Acai 500ml.png" style="width:80px;height:80px;object-fit: cover;">
+                        <h1 style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;width:70px" id="nome-produto">Amaciante Downy Conc</h1>
+                    </div>
+                    <h1 class="preco-produto" style="font-size: 15px;color:var(--verde);margin-left:16px">10R$</h1>
+                    <div style="display:flex;justify-content: center;margin-top:25px;position:absolute;bottom:10px;left:50%;transform:translate(-50%)">
+                        <button id="remover-quantidade" style="background-color:var(--vermelho);border:none;border-radius: 4px;box-shadow: var(--vermelho) 0px 0px 3px;color:white;height:30px;width:35px;margin:0 1px">-</button>
+                        <button id="adicionar-produto" style="padding:0 5px;border-radius: 4px;border:none;background-color:var(--verde);color:white;font-family: Arial, Helvetica, sans-serif;box-shadow: var(--verde) 0px 0px 3px;">Adicionar</button>
+                        <button id="adicionar-quantidade" style="background-color:var(--verde);border:none;border-radius: 4px;box-shadow: var(--verde) 0px 0px 3px;color:white;height:30px;width:35px;margin:0 1px">+</button>
+                    </div>
+                </div>
+            </div>
+            <button id="close">X</button>
+        </div>
+    </div>
 
+    <div id="confirmacao">
+        <h1 class="carrinho-confirmacao">Carrinho: R$ 10,00</h1>
+        <h1 class="quantidade-confirmacao">Quantidade: 1 item</h1>
+        <div id="perguntas">
+            <h1 style="font-size:13px">De onde você é?</h1>
+            <div>
+                <button style="font-size:12px" class="sou-vista">C. Vista Valley</button>
+                <button style="font-size:12px" class="sou-vila">Vila Formosa</button>
+                <button style="font-size:12px" class="sou-reg">Região</button>
+            </div>
+        </div>
+
+        <h1 class="titulo-confirmacao">Deseja confirmar sua compra?</h1>
+
+        <div id="simnao">
+            <button class="nao">Não</button>
+            <button class="sim">Sim</button>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
     <script src="./index.js"></script>
